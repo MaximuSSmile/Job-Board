@@ -14,7 +14,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
-gem 'rails_12factor'
+gem "therubyracer"
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'rails_12factor', group: :production
 
 
 group :development, :test do
@@ -25,4 +27,5 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
+
 
