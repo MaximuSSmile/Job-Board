@@ -17,7 +17,7 @@ gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 gem 'rails_12factor', group: :production
-
+gem 'puma'
 
 group :development, :test do
   gem 'byebug'
